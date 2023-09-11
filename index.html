@@ -7,49 +7,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3 mx-3">Kalkulator wypłat</h2>
-        <div class="row row-cols-1 row-cols-md-2 mb-3">
+    
+    <div class="container">
+        <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3 mx-3">Kalkulator wypłat</h2>
         
-            <div class="form-floating col my-3">
-                <input type="float" class="form-control" id="hoursInput" placeholder="240">
-                <label for="floatingHours" class="mx-1">Liczba godzin</label>
+        <div class="row">
+            <div class="col my-3">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="hoursInput" placeholder="240">
+                    <label for="hoursInput">Liczba godzin</label>
+                </div>
             </div>
-            <div class="form-floating col  my-3">
-                <input type="float" class="form-control" id="payementInput" placeholder="23.5">
-                <label for="floatingPayement" class="mx-1">Stawka brutto</label>
+        </div>
+        
+        <div class="row">
+            <div class="col my-3">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="payementInput" placeholder="23.5">
+                    <label for="payementInput">Stawka brutto</label>
+                </div>
             </div>
         </div>
 
-         <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
-        <div class="col my-3">
-            <div class="form-check text-start my-3 mx-3">
-                <input class="form-check-input" type="checkbox" value="check1" id="check1">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Ulga podatkowa 300zł (Podpisany PIT-2)
-                </label> 
-              </div>
-          </div>
-        
+        <div class="row">
+            <div class="col my-3">
+                <div class="form-check text-start my-3 mx-3">
+                    <input class="form-check-input" type="checkbox" value="check1" id="check1">
+                    <label class="form-check-label" for="check1">
+                      Ulga podatkowa 300zł (Podpisany PIT-2)
+                    </label> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col my-3">
                 <div class="form-check text-start my-3 mx-3">
                     <input class="form-check-input" type="checkbox" value="check2" id="check2">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <label class="form-check-label" for="check2">
                       Student do 26 lat
                     </label> 
-                  </div>
-              </div>
-            </div> 
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" id="obliczenie" type="button">Oblicz wypłatę</button>
-              </div>
-    
-              
-<div class="px-4 py-5 my-5 text-center"> 
-    <div class="display-5 text-body-emphasis" id="stawka" style="font-size: 24px;"></div>
-    <div class="display-5 text-body-emphasis" id="wyplata" style="font-size: 24px;"></div>
-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col my-3">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" id="obliczenie" type="button">Oblicz wypłatę</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col my-3">
+                <div class="px-4 py-5 my-5 text-center"> 
+                    <div class="display-5 text-body-emphasis" id="stawka" style="font-size: 24px;"></div>
+                    <div class="display-5 text-body-emphasis" id="wyplata" style="font-size: 24px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
 <script src="index.js"></script>
 </body>
 </html>
+
